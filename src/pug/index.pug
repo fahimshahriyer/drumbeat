@@ -1,0 +1,88 @@
+doctype html
+html
+  head
+    title #{config.title} - #{config.description}
+    meta(charset='UTF-8')
+    meta(http-equiv='X-UA-Compatible', content='IE=edge')
+    meta(name='description' content="meta desc")
+    meta(name='viewport' content='width=device-width, initial-scale=1.0, user-scalable=no')
+
+    //- ==================================================
+    //- Stylesheets
+    //- ==================================================
+
+    link(rel="stylesheet" href="css/style.css")
+
+
+
+  body
+    .container
+
+      //- ==================================================
+      //- Put your content here
+      //- ==================================================
+
+      div(class='keys')
+        div(data-key="65" class="key")
+            div.keyboard 
+                span A
+            span(class="sound") CLAP
+
+        div(data-key="83" class="key")
+            div.keyboard 
+                span S
+            span(class="sound") HIHAT
+
+        div(data-key="68" class="key")
+            div.keyboard 
+                span D
+            span(class="sound") KICK
+
+        div(data-key="70" class="key")
+            div.keyboard 
+                span F
+            span(class="sound") OPENHEAD
+
+        div(data-key="71" class="key")
+            div.keyboard 
+                span G
+            span(class="sound") BOOM
+
+        div(data-key="72" class="key")
+            div.keyboard 
+                span H
+            span(class="sound") RIDE
+
+        div(data-key="74" class="key")
+            div.keyboard 
+                span J
+            span(class="sound") SNARE
+
+        div(data-key="75" class="key")
+            div.keyboard 
+                span K
+            span(class="sound") TOM
+
+        div(data-key="76" class="key")
+            div.keyboard 
+                span L
+            span(class="sound") TINK
+
+
+
+        audio(data-key='65' src="sounds/clap.wav")
+        audio(data-key='83' src="sounds/hihat.wav")
+        audio(data-key='68' src="sounds/kick.wav")
+        audio(data-key='70' src="sounds/openhat.wav")
+        audio(data-key='71' src="sounds/boom.wav")
+        audio(data-key='72' src="sounds/ride.wav")
+        audio(data-key='74' src="sounds/snare.wav")
+        audio(data-key='75' src="sounds/tom.wav")
+        audio(data-key='76' src="sounds/tink.wav")
+
+
+    //- ==================================================
+    //- Scripts
+    //- ==================================================
+
+    script(src='js/main.js')

@@ -1,0 +1,26 @@
+{
+  "title": "Drumbeat",
+  "description": "Play some drums",
+  "mobile": {
+    "theme_color": "#ffffff",
+    "logo_color": "#5bbad5"
+  },
+  "social": {
+    "twitter": {
+        "card": "photo",
+        "site": "",
+        "url": "",
+        "title": "",
+        "image": ""
+    },
+    "open_graph": {
+        "title": "",
+        "description": "",
+        "image": "",
+        "url": ""
+    }
+  },
+  "analytics": {
+    "ga": "UA-000000-0"
+  }
+}
